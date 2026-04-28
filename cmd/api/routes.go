@@ -9,7 +9,6 @@ import (
 func (app *application) routes() *httprouter.Router {
 	// Initialize a new httprouter router instance.
 	router := httprouter.New()
-
 	// Convert the notFoundResponse() helper to a http.Handler using the
 	// http.HandlerFunc() adapter, and then set it as the custom error handler for 404
 	// Not Found responses.
